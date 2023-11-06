@@ -1,13 +1,10 @@
 ## Setup
 
-1. create and active env 
+1. create venv 
 ```
-python3 -m venv ./.venv/ 
+python -m venv ./.venv/ 
 ```
-or 
-```
-python3 -m venv ./.venv/ 
-```
+2. activate venv
 macOS:
 ```
 source .venv/bin/activate
@@ -16,15 +13,14 @@ windows:
 ```
 .venv\Scripts\activate
 ```
-2. install requirements
-
+3. install requirements
 ```
 pip install -r requirements.txt
 ```
-3. configure your api key 
+4. configure your api key 
 create a file .env with your OpenAI api key as described in .env.example
 
-4. run application
+5. run application
 ```
 python ./app/main.py
 ```
